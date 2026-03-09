@@ -7,7 +7,7 @@ for i in sheet.iter_rows(values_only=True):
 newvals=[["Mouse","h8",93],['keyboard',"h7",94],['HI',"g8",87]]
 for i in newvals:
     sheet.append(i)
-print("After appending \n")
+print("After appending :")
 for i in sheet.iter_rows(values_only=True):
     print(i)
 sheet.delete_rows(idx=4)
